@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+.main_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.span_main {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 10px;
+}

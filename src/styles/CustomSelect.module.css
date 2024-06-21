@@ -1,0 +1,52 @@
+/* CustomSelect.module.css */
+
+.custom_select {
+  position: relative;
+  display: inline-block;
+}
+
+.selected_option {
+  padding: 10px;
+  background-color: #343a40;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected_option.active {
+  background-color: #495057; /* Background color when active */
+}
+
+.options {
+  position: absolute;
+  top: calc(
+    100% + 4px
+  ); /* Adjust position to sit right below selected option */
+  left: 0;
+  width: 100%;
+  max-height: 200px; /* Adjust as needed */
+  overflow-y: auto;
+  background-color: #343a40;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Initially hidden */
+}
+
+.options.active {
+  display: block; /* Show options when active */
+}
+
+.option {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover,
+.option.selected {
+  background-color: #495057; /* Background color on hover and when selected */
+}
